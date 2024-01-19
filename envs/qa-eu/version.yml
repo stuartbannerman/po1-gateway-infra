@@ -8,7 +8,4 @@ spec:
     spec:
       containers:
       - name: po1-gateway
-        env:
-        - name: REGION
-          value: "us"
-
+        image: docker.io/kostiscodefresh/simple-env-app:1.0

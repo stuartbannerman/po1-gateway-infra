@@ -2,21 +2,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: simple-deployment
+  name: po1-gateway
   annotations:
     codefresh.io/app: simple-go-app
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: trivial-go-web-app
+      app: po1-gateway
   template:
     metadata:
       labels:
-        app: trivial-go-web-app
+        app: po1-gateway
     spec:
       containers:
-      - name: webserver-simple
+      - name: po1-gateway
         imagePullPolicy: Always
         image: docker.io/kostiscodefresh/simple-env-app:1.0
         ports:

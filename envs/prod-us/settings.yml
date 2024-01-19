@@ -2,12 +2,12 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: simple-deployment
+  name: po1-gateway
 spec:
   template:
     spec:
       containers:
-      - name: webserver-simple
+      - name: po1-gateway
         env:
         - name: UI_THEME
           value: "dark"
@@ -16,6 +16,6 @@ spec:
         - name: PAGE_LIMIT
           value: "25"
         - name: SORTING
-          value: "ascending"    
+          value: "ascending"
         - name: N_BUCKETS
-          value: "42"          
+          value: "42"

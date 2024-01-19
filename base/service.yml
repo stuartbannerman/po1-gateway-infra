@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: simple-service
+  name: po1-gateway
 spec:
   type: ClusterIP
   selector:
-    app: trivial-go-web-app
+    app: po1-gateway
   ports:
     - protocol: TCP
       port: 80

@@ -10,13 +10,13 @@ spec:
       - name: po1-gateway
         env:
         - name: ENV_TYPE
-          value: "production"
+          value: "qa"
         - name: PAYPAL_URL
-          value: "production.paypal.com"
+          value: "qa.paypal.com"
         - name: DB_USER
-          value: "prod_username"
+          value: "qa_username"
         - name: DB_PASSWORD
-          value: "prod_password"
+          value: "qa_password"
         livenessProbe:
           httpGet:
             path: /health
