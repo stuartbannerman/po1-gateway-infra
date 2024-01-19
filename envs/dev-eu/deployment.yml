@@ -10,6 +10,6 @@ spec:
       - name: po1-gateway
         env:
         - name: ENV
-          value: "prod-eu"
+          value: "dev-eu"
         - name: GPU_ENABLED
           value: "1"
