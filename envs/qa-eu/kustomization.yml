@@ -9,6 +9,7 @@ resources:
 
 components:
   - ../../variants/qa
+  - ../../variants/eu
 
 patchesStrategicMerge:
 - deployment.yml
