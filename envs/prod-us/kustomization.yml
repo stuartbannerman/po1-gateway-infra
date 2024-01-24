@@ -8,8 +8,8 @@ resources:
 - ../../base
 
 components:
-  - ../../variants/prod
-  - ../../variants/us
+- ../../variants/prod
+- ../../variants/us
 
 patchesStrategicMerge:
 - deployment.yml

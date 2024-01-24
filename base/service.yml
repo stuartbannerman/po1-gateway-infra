@@ -7,6 +7,6 @@ spec:
   selector:
     app: po1-gateway
   ports:
-    - protocol: TCP
-      port: 80
-      targetPort: 8080
+  - protocol: TCP
+    port: 80
+    targetPort: 8080

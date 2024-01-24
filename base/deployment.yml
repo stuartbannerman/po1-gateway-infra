@@ -16,6 +16,6 @@ spec:
       containers:
       - name: po1-gateway
         imagePullPolicy: Always
-        image: docker.io/kostiscodefresh/simple-env-app:1.0
+        image: k8s.gcr.io/e2e-test-images/echoserver:2.5
         ports:
         - containerPort: 8080
