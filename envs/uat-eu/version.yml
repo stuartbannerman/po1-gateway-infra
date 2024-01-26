@@ -8,4 +8,4 @@ spec:
     spec:
       containers:
       - name: po1-gateway
-        image: docker.io/kostiscodefresh/simple-env-app:3.0
+        image: k8s.gcr.io/e2e-test-images/echoserver:2.5
