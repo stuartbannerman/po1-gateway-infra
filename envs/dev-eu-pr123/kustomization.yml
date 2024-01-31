@@ -10,6 +10,7 @@ resources:
 components:
 - ../../variants/dev
 - ../../variants/eu
+- ../../variants/pr123
 
 patchesStrategicMerge:
 - deployment.yml

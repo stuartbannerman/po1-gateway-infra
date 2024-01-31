@@ -4,8 +4,4 @@ kind: Deployment
 metadata:
   name: po1-gateway
 spec:
-  template:
-    spec:
-      containers:
-      - name: po1-gateway
-
+  replicas: 3

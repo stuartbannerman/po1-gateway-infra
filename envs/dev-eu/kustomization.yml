@@ -11,6 +11,4 @@ components:
 - ../../variants/dev
 - ../../variants/eu
 
-patchesStrategicMerge:
-- replicas.yml
-
+patchesStrategicMerge: []
