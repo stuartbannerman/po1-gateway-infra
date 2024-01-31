@@ -3,4 +3,4 @@ kind: ConfigMap
 metadata:
   name: po1-gateway
 data:
-  NAME: po1-pr123-eu
+  NAME: po1-dev
