@@ -1,0 +1,25 @@
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: po1-gateway
+  annotations:
+    alb.ingress.kubernetes.io/scheme: internet-facing
+    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:eu-west-1:236731556556:certificate/71089b9a-c2a0-4462-adc8-c30abee548b5
+    alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}, {"HTTPS":443}]'
+    alb.ingress.kubernetes.io/ssl-redirect: '443'
+    alb.ingress.kubernetes.io/group.name: po1
+    alb.ingress.kubernetes.io/group.order: '2'
+spec:
+  ingressClassName: alb
+  rules:
+    - host: po1-gateway.dev.travcorpservices.com
+      http:
+        paths:
+          - path: /
+            pathType: Exact
+            backend:
+              service:
+                name: po1-gateway
+                port:
+                  number: 80

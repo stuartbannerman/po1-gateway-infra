@@ -8,17 +8,4 @@ spec:
     spec:
       containers:
       - name: po1-gateway
-        env:
-        - name: ENV_TYPE
-          value: "production"
-        - name: PAYPAL_URL
-          value: "production.paypal.com"
-        - name: DB_USER
-          value: "prod_username"
-        - name: DB_PASSWORD
-          value: "prod_password"
-        livenessProbe:
-          httpGet:
-            path: /health
-            port: 8080
 
