@@ -19,12 +19,12 @@ spec:
       http:
         paths:
           - path: /
-            pathType: Exact
+            pathType: Prefix
             backend:
               service:
                 name: dev-po1-gateway
                 port:
-                  number: 80
+                  name: http
   tls:
   - hosts:
     - po1-gateway.dev.travcorpservices.com
