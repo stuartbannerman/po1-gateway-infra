@@ -20,6 +20,6 @@ spec:
             pathType: Exact
             backend:
               service:
-                name: po1-gateway
+                name: dev-po1-gateway-service
                 port:
                   number: 80
