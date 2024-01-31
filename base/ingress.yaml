@@ -5,7 +5,7 @@ metadata:
   name: po1-gateway
   annotations:
     alb.ingress.kubernetes.io/scheme: internet-facing
-    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:eu-west-1:236731556556:certificate/71089b9a-c2a0-4462-adc8-c30abee548b5
+    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:eu-west-1:236731556556:certificate/56d1d4b5-342a-41cd-8a14-8ee7e3b9665d
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}, {"HTTPS":443}]'
     alb.ingress.kubernetes.io/ssl-redirect: '443'
     alb.ingress.kubernetes.io/group.name: po1
