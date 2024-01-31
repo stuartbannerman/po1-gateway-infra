@@ -5,3 +5,8 @@ metadata:
 data:
   ENVIRONMENT: unknown
   NAME: po1
+  NODE_ENV: production
+  HOST: '0.0.0.0'
+  PORT: '8080'
+  REMOTE_URL_SERVICE1: http://po1-service-demo.po1.svc.cluster.local:4000
+  REMOTE_GRAPHQL_ROUTE: /
