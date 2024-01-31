@@ -10,3 +10,5 @@ data:
   PORT: '8080'
   REMOTE_URL_SERVICE1: http://dev-po1-service-demo.po1.svc.cluster.local
   REMOTE_GRAPHQL_ROUTE: /graphql
+  INTROSPECTION: 'true'
+  STACKTRACES: 'true'
