@@ -22,7 +22,7 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: dev-po1-gateway
+                name: po1-gateway
                 port:
                   name: http
   tls:
